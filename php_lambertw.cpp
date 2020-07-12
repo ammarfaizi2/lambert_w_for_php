@@ -1,7 +1,7 @@
 
 #include "php_lambertw.hpp"
-#include "lambertw_ext/LambertW.h"
-#include "lambertw_ext/FukushimaLambertW.h"
+#include <LambertW.h>
+#include <FukushimaLambertW.h>
 
 ZEND_DECLARE_MODULE_GLOBALS(lambertw);
 
@@ -13,7 +13,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_lambertw, 0, 0, 1)
   ZEND_ARG_INFO(0, n)
 ZEND_END_ARG_INFO()
 
-PHP_FUNCTION(lambertw)
+PHP_FUNCTION(lambertw_fukushima)
 {
   double n, ret;
 
@@ -22,6 +22,19 @@ PHP_FUNCTION(lambertw)
   ZEND_PARSE_PARAMETERS_END();
 
   ret = Fukushima::LambertW(0, n);
+
+  RETURN_DOUBLE(ret);
+}
+
+PHP_FUNCTION(lambertw)
+{
+  double n, ret;
+
+  ZEND_PARSE_PARAMETERS_START(1, 1)
+    Z_PARAM_DOUBLE(n);
+  ZEND_PARSE_PARAMETERS_END();
+
+  ret = utl::LambertW(0, n);
 
   RETURN_DOUBLE(ret);
 }
