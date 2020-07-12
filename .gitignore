@@ -36,3 +36,4 @@ run-tests.php
 *.lo
 *.P
 /.phpintel/
+!lambertw_ext/Makefile
