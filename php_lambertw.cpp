@@ -41,6 +41,7 @@ PHP_FUNCTION(lambertw)
 
 static const zend_function_entry module_functions[] = {
   PHP_FE(lambertw, arginfo_lambertw)
+  PHP_FE(lambertw_fukushima, arginfo_lambertw)
   PHP_FE_END
 };
 
