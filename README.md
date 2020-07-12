@@ -17,7 +17,13 @@ php -dextension=$(pwd)/modules/lambertw.so test.php
 ```
 
 # Thanks to
-- https://arxiv.org/abs/1003.1628
+
+#### Lambert W Function for Applications in Physics
+- https://dx.doi.org/10.1016/j.cpc.2012.07.008
 - https://arxiv.org/abs/1209.0735
-- (Lambert W function for applications in physics)[https://dx.doi.org/10.1016/j.cpc.2012.07.008]
+
+#### Lambert W Implementation in C++
 - https://github.com/DarkoVeberic/LambertW
+
+# License
+This package is licensed under the MIT license.
