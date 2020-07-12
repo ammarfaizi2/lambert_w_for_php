@@ -29,4 +29,10 @@ run-tests.php
 *.log
 *.tmp
 *.lock
+*.o
+*.so
+*.swo
+*.swp
+*.lo
+*.P
 /.phpintel/
