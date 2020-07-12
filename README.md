@@ -22,7 +22,7 @@ php -dextension=$(pwd)/modules/lambertw.so test.php
 - https://dx.doi.org/10.1016/j.cpc.2012.07.008
 - https://arxiv.org/abs/1209.0735
 
-#### C++ implementation of the Lambert W(x) function.
+#### C++ implementation of the Lambert W(x) function
 - https://github.com/DarkoVeberic/LambertW
 
 # License
