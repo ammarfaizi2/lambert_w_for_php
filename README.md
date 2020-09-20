@@ -1,6 +1,6 @@
 
 # PHP Lambert W Function
-PHP implementation of the [Lambert W(x) function](https://en.wikipedia.org/wiki/Lambert_W_function).
+PHP extension to compute [Lambert W(x) function](https://en.wikipedia.org/wiki/Lambert_W_function).
 
 # Installation
 ```
